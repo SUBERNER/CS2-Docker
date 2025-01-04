@@ -11,15 +11,15 @@ services:
 
     environment:
       SERVER_HOSTNAME: "Counter-strike 2 Dedicated server"
-      SERVER_PASSWORD: ""
-      RCON_PASSWORD: ""
+      SERVER_PASSWORD: "PASSWORD"
+      RCON_PASSWORD: "PASSWORD"
       IP: 0.0.0.0
       PORT: 27015
       GAME_TYPE: 0
       GAME_MODE: 1
       MAP: de_dust2
       MAXPLAYERS: 12
-      TOKEN: #Steam TOKEN
+      TOKEN: DB8B4AFD4D55E2D7F7B1A83A2AA7E9EF
       EXTRAARG: #Extra Launch options
 
     volumes:
