@@ -12,15 +12,39 @@ services:
     environment:
       SERVER_HOSTNAME: "Counter-strike 2 Dedicated server"
       SERVER_PASSWORD: "PASSWORD"
+      SERVER_PORT: 27015
+      SERVER_MAXPLAYERS: 10
+      SERVER_HIBERNATE: 0
+
+      TV_ENABLE: 0
+      TV_AUTORECORD: 0
+      TV_PORT: 27020
+      TV_PASSWORD: "PASSWORD"
+      TV_RELAY_PASSWORD: "PASSWORD"
+      TV_MAXPLAYERS: 10 
+
       RCON_PASSWORD: "PASSWORD"
+      RCON_PORT: 27010
+
       IP: 0.0.0.0
-      PORT: 27015
       GAME_TYPE: 0
-      GAME_MODE: 1
+      GAME_MODE: 0
       MAP: de_dust2
-      MAXPLAYERS: 12
-      TOKEN: DB8B4AFD4D55E2D7F7B1A83A2AA7E9EF
+      CHEATS: 1
+
+      BOT_DIFFICULTY: 3
+      BOT_QUOTA: 10
+      BOT_QUOTA_MODE: "normal"
+
+      TOKEN: "DB8B4AFD4D55E2D7F7B1A83A2AA7E9EF"
       EXTRAARG: #Extra Launch options
+
+      LOG_ENABLE: "off"
+      LOG_MONEY: 0
+      LOG_DETAIL: 0
+      LOG_ITEMS: 0 
+      LOG_LOADOUTS: 0
+
 
     volumes:
       - type: volume
